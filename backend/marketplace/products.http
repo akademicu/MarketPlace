@@ -1,0 +1,110 @@
+### Add our first product
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "name": "Laptop",
+  "description": "First laptop in MarketPlace",
+  "price": 899.99,
+  "quantity": 5,
+  "category": "Electronics"
+}
+
+### Update product with ID 1
+PUT http://localhost:8080/api/products/2
+Content-Type: application/json
+
+{
+  "name": "Laptop",
+  "description": "Updated laptop in MarketPlace",
+  "price": 799.99,
+  "quantity": 10,
+  "category": "Electronics"
+}
+
+### Delete product with ID 2
+DELETE http://localhost:8080/api/products/2
+
+### Delete a product that does not exist
+DELETE http://localhost:8080/api/products/999
+
+### Create a new product
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "name": "Wireless Mouse",
+  "description": "Bluetooth wireless mouse",
+  "price": 29.99,
+  "quantity": 20,
+  "category": "Electronics"
+}
+
+### Update a product that does not exist
+PUT http://localhost:8080/api/products/999
+Content-Type: application/json
+
+{
+  "name": "Gaming Laptop",
+  "description": "Updated laptop",
+  "price": 1299.99,
+  "quantity": 5,
+  "category": "Electronics"
+}
+### Delete a product that does not exist
+DELETE http://localhost:8080/api/products/999
+### Create a product using ProductRequest
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "name": "Gaming Laptop",
+  "description": "Powerful gaming laptop",
+  "price": 1299.99,
+  "quantity": 5,
+  "category": "Electronics"
+}
+
+### Get product by ID using ProductResponse
+GET http://localhost:8080/api/products/6
+
+### Get all products using ProductResponse
+GET http://localhost:8080/api/products
+
+### Update product using ProductRequest
+PUT http://localhost:8080/api/products/6
+Content-Type: application/json
+
+{
+  "name": "Gaming Laptop Pro",
+  "description": "High-performance gaming laptop",
+  "price": 1499.99,
+  "quantity": 8,
+  "category": "Electronics"
+}
+
+###
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "name": "Mechanical Keyboard",
+  "description": "RGB mechanical gaming keyboard",
+  "price": 79.99,
+  "quantity": 15,
+  "category": "Electronics"
+}
+###
+PUT http://localhost:8080/api/products/7
+Content-Type: application/json
+
+{
+  "name": "Mechanical Keyboard Pro",
+  "description": "RGB mechanical gaming keyboard with blue switches",
+  "price": 99.99,
+  "quantity": 12,
+  "category": "Electronics"
+}
+###
+DELETE http://localhost:8080/api/products/7
+
